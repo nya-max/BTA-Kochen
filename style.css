@@ -1,28 +1,63 @@
-body {
-    background-color: red;
-    font-family: Arial, Helvetica, sans-serif;
-}
-h1 {
-    color: yellow;
-    font-family: 'Courier New', Courier, monospace;
-}
-p {
-    background-color: black; 
-    color: white;
-}
-/* Selektor ID mit dem Namen nummer-1*/
-#nummer-1 {
-    background-color: pink;
+*{
+    box-sizing: border-box;
 }
 
-#nummer-2 {
-    color: green;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    line-height: 1.5;
 }
-div{
-    height: 100px; 
-    background-color: blue;
-    margin: 10px;
+a {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    }
+
+li {
+    list-style-type: none;
+    text-align: center;
+    margin: 0 10px;
 }
-.aqua {
-    background-color: aquamarine;
+
+li a:hover{
+    color: white;
+    background: #374a67;
 }
+.hidden {
+    display:none; 
+}
+
+.show{
+    display: block;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:64px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#burger{
+    border: none;
+    background: transparent;
+}
+
+@media (min-width: 60em) {
+    .hidden{
+        display: block;
+    }
+    #burger{
+        display: none;
+    }
+    nav ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
